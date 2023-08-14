@@ -15,6 +15,14 @@ const M_Page2 = () => {
         <h2>rating</h2>
         <p>food details</p>
       </div>
+      <div>
+        add-ons
+        <div>item1</div>
+        <div>item2</div>
+        <div>item3</div>
+        <div>item4</div>
+        <div>item5</div>
+      </div>
     </>
   );
 };
