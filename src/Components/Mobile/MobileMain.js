@@ -1,6 +1,7 @@
 import React from "react";
 import MobileLayout from "../Layouts/MobileLayout";
 import { styled } from "styled-components";
+import { Link } from "react-router-dom";
 const Bgi = styled.div`
   user-select: none;
   background: url("/assets/MobileMainImg.jpg") no-repeat cover;
@@ -70,8 +71,12 @@ const MobileMain = () => {
             <Title>SUPER FOOD, DUPER FUN</Title>
             <Subtitle>Premium Burger from San Francisco !</Subtitle>
             <ButtonWrap>
-              <Button className="order">Order</Button>
-              <Button className="login">Log-In/Register</Button>
+              <Button className="order">
+                <Link to="/order">Order</Link>
+              </Button>
+              <Button className="login">
+                <Link to="/login">Login / Register</Link>
+              </Button>
             </ButtonWrap>
           </footer>
           {/* <img src={MobileMainImg} alt="1" /> */}
